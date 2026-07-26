@@ -1,0 +1,41 @@
+# ESP32-S3-EYE defconfig for AI Fall Detection Agent
+#
+# Based on esp32s3-eye board with additions for:
+# - AI Agent framework (fall-detect / fall-patrol / voice-help)
+# - Audio output for TTS voice alerts
+# - Scheduled patrol (cron)
+
+# ── Board & Architecture ──────────────────────────────────────────────
+CONFIG_ARCH_CHIP_ESP32S3=y
+CONFIG_ARCH_BOARD_ESP32S3_EYE=y
+CONFIG_ESP32S3_SPIRAM=y
+
+# ── Networking (WiFi for LLM + Feishu) ────────────────────────────────
+CONFIG_NET=y
+CONFIG_NET_TCP=y
+CONFIG_NET_UDP=y
+CONFIG_WIFI=y
+CONFIG_ESP32S3_WIFI=y
+
+# ── Video / Camera (V4L2 for fall-patrol photo capture) ──────────────
+CONFIG_VIDEO=y
+CONFIG_VIDEO_V4L2=y
+
+# ── Sensor (I2C accelerometer for fall-detect) ────────────────────────
+CONFIG_I2C=y
+CONFIG_SENSORS=y
+
+# ── AI Agent Fall Detect App ──────────────────────────────────────────
+CONFIG_LVX_USE_DEMO_CONTEST2026_069_FALL_DETECT_APP=y
+
+# ── AI Agent Cron: periodic patrol scheduling ─────────────────────────
+# Reason: fall-patrol requires CONFIG_AI_AGENT_CRON for scheduled patrol runs
+CONFIG_AI_AGENT_CRON=y
+
+# ── Audio subsystem: TTS voice alert via speaker ──────────────────────
+# Reason: voice-help skill requires audio subsystem to output TTS audio
+CONFIG_AUDIO=y
+
+# ── I2S driver: audio output to MAX98357A speaker ─────────────────────
+# Reason: voice-help skill sends TTS audio over I2S to external DAC/speaker
+CONFIG_I2S=y

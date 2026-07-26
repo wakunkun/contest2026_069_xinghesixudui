@@ -12,5 +12,9 @@
     <linkfile src="app/hello_app" dest="packages/demos/contest2026_069_hello_app"/>
     <linkfile src="quickapp/hello_quickapp" dest="packages/apps/contest2026_069_hello_quickapp"/>
     <linkfile src="board/contest_board" dest="vendor/openvela/boards/contest2026_069_board"/>
+    <linkfile src="app/fall_detect_app" dest="packages/demos/contest2026_069_fall_detect_app"/>
+    <linkfile src="packages/ai_agent/agent_skills/fall-detect.md" dest="packages/ai_agent/agent_skills/fall-detect.md"/>
+    <linkfile src="packages/ai_agent/agent_skills/voice-help.md" dest="packages/ai_agent/agent_skills/voice-help.md"/>
+    <linkfile src="packages/ai_agent/agent_skills/fall-patrol.md" dest="packages/ai_agent/agent_skills/fall-patrol.md"/>
   </project>
 </manifest>

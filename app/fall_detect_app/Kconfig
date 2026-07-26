@@ -1,0 +1,31 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config LVX_USE_DEMO_CONTEST2026_069_FALL_DETECT_APP
+	bool "Contest 2026 team 069 fall detect AI agent app"
+	default n
+	---help---
+		Enable the contest 2026 team 069 fall detection AI agent application.
+		This app initializes the AI Agent framework and registers three skills:
+		fall-detect, fall-patrol, and voice-help.
+
+config AI_AGENT_CAMERA
+	bool "Enable AI Agent camera capture tool"
+	default n
+	---help---
+		Enable V4L2 camera capture support for the AI Agent fall-patrol skill.
+
+config AI_AGENT_FEISHU
+	bool "Enable AI Agent Feishu notification tool"
+	default n
+	---help---
+		Enable Feishu webhook notification support for the AI Agent.
+
+config AI_AGENT_CRON
+	bool "Enable AI Agent scheduled patrol (cron)"
+	default n
+	---help---
+		Enable periodic patrol scheduling for the AI Agent fall-patrol skill.
+		Requires CONFIG_AI_AGENT_CAMERA to be enabled.
