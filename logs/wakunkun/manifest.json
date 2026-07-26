@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "team_id": "contest2026_069_xinghesixudui",
+  "github_login": "wakunkun",
+  "generator": "claude-code-collector@1.2.0",
+  "updated_at": "2026-07-26T09:51:02.394Z",
+  "sessions": [
+    {
+      "session_id": "3860c5ff-69b3-41e7-9382-d312aab081ef",
+      "tool": "claude-code",
+      "started_at": "2026-07-26T09:44:48.877Z",
+      "last_event_at": "2026-07-26T09:51:02.392Z",
+      "event_count": 131,
+      "raw_event_count": 186,
+      "file_path": "logs/wakunkun/2026-07-26/claude-code__3860c5ff-69b3-41e7-9382-d312aab081ef.jsonl",
+      "collection_mode": "cli",
+      "health": "ok",
+      "model": "mimo-v2.5-pro"
+    }
+  ]
+}
