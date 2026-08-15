@@ -30,3 +30,7 @@ __pycache__/
 
 # Node.js dependencies
 node_modules/
+app/fall_detect_app/.built
+app/fall_detect_app/.depend
+app/fall_detect_app/Make.dep
+app/fall_detect_app/fall_detect_app

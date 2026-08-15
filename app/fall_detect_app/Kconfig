@@ -6,10 +6,18 @@
 config LVX_USE_DEMO_CONTEST2026_069_FALL_DETECT_APP
 	bool "Contest 2026 team 069 fall detect AI agent app"
 	default n
+	select EXAMPLES_AI_AGENT_VELA
+	select AI_AGENT_CAMERA
+	select AI_AGENT_FEISHU
+	select AUDIO
+	select I2S
+	select AUDIO_I2S
+	select I2C
+	select SENSORS_QMA7981
 	---help---
-		Enable the contest 2026 team 069 fall detection AI agent application.
-		This app initializes the AI Agent framework and registers three skills:
-		fall-detect, fall-patrol, and voice-help.
+		Enable the Silver Guardian runtime entry point. It provisions the three
+		contest skills, monitors /dev/accel0, and forwards fall events to the
+		official Vela AI Agent message bus.
 
 config AI_AGENT_CAMERA
 	bool "Enable AI Agent camera capture tool"

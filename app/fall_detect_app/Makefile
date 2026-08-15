@@ -9,6 +9,9 @@ PRIORITY  = SCHED_PRIORITY_DEFAULT
 STACKSIZE = 4096
 MODULE    = $(CONFIG_LVX_USE_DEMO_CONTEST2026_069_FALL_DETECT_APP)
 
+CFLAGS += -I$(APPDIR)/packages/ai_agent/include
+CFLAGS += -I$(APPDIR)/packages/ai_agent/src
+
 MAINSRC = fall_detect_main.c
 
 include $(APPDIR)/Application.mk
