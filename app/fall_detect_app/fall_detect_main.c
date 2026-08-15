@@ -253,6 +253,7 @@ static int monitor_accelerometer(struct runtime_state *state)
   int fd;
   int64_t magnitude_sq;
   uint32_t debounce_us = 0;
+  uint32_t sample_count = 0;
 
   fd = open("/dev/accel0", O_RDONLY);
   if (fd < 0)
@@ -273,6 +274,12 @@ static int monitor_accelerometer(struct runtime_state *state)
         {
           usleep(SENSOR_POLL_DELAY_US);
           continue;
+        }
+
+      if ((++sample_count % 50) == 0)
+        {
+          printf("[fall_detect_app] sample: x=%d y=%d z=%d\n",
+                 sample.x, sample.y, sample.z);
         }
 
       magnitude_sq = (int64_t)sample.x * sample.x +
