@@ -42,3 +42,10 @@ AI 硬件产品创新（openvela + ai_agent 端侧多模态 AI 老人关怀系�
 - **PSRAM**：本板使用 QPI 模式 + `SPIRAM_BOOT_INIT=n`（OCT 模式启动挂起；复用 ROM 初始化，PSRAM heap 253KB 可用）
 - **QMA7981**：位于 I2C1（SDA=GPIO4, SCL=GPIO5），CHIP_ID 0x90，软复位后需 10ms 等待（驱动补丁已提交上游 PR）
 - **ai_agent**：38 个内置工具（camera_capture / feishu_send_mention / cron_add / music_play / vibrate 等）+ 10 个内置 skill + cron 主动任务 + WiFi 配网
+
+## 作品信息
+
+- 队伍：星河四序队（编号 069）
+- 赛道：AI 硬件产品创新
+- 上游贡献：open-vela/nuttx PR #345（QMA7981 驱动修复）
+- 许可证：Apache 2.0
