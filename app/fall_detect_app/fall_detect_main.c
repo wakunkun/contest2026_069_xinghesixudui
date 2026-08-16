@@ -27,7 +27,7 @@
   CONFIG_EXAMPLES_AI_AGENT_VELA_DATA_DIR "/skills"
 
 #define ACCEL_SAMPLE_BYTES ((ssize_t)sizeof(struct qma7981_data_s))
-#define ACCEL_THRESHOLD_RAW 3061
+#define ACCEL_THRESHOLD_RAW 1536 /* 3 g @ ±4 g range (512 LSB/g, measured 1g≈ 512) */
 #define ACCEL_THRESHOLD_SQ ((int64_t)ACCEL_THRESHOLD_RAW * ACCEL_THRESHOLD_RAW)
 #define FALL_DEBOUNCE_MS 500
 #define SENSOR_POLL_DELAY_US 100000
