@@ -3,7 +3,7 @@
   "team_id": "contest2026_069_xinghesixudui",
   "github_login": "wakunkun",
   "generator": "claude-code-collector@1.2.0",
-  "updated_at": "2026-07-26T09:51:02.394Z",
+  "updated_at": "2026-07-26T12:49:49.960Z",
   "sessions": [
     {
       "session_id": "3860c5ff-69b3-41e7-9382-d312aab081ef",
@@ -13,6 +13,42 @@
       "event_count": 131,
       "raw_event_count": 186,
       "file_path": "logs/wakunkun/2026-07-26/claude-code__3860c5ff-69b3-41e7-9382-d312aab081ef.jsonl",
+      "collection_mode": "cli",
+      "health": "ok",
+      "model": "mimo-v2.5-pro"
+    },
+    {
+      "session_id": "a050091c-642b-4f21-856f-c87d43699eaf",
+      "tool": "claude-code",
+      "started_at": "2026-07-26T10:47:46.365Z",
+      "last_event_at": "2026-07-26T10:47:46.365Z",
+      "event_count": 4,
+      "raw_event_count": 14,
+      "file_path": "logs/wakunkun/2026-07-26/claude-code__a050091c-642b-4f21-856f-c87d43699eaf.jsonl",
+      "collection_mode": "cli",
+      "health": "ok",
+      "model": "<synthetic>"
+    },
+    {
+      "session_id": "e0bc2875-f5a3-456e-90d4-a1ebe0bfc812",
+      "tool": "claude-code",
+      "started_at": "2026-07-26T12:16:01.383Z",
+      "last_event_at": "2026-07-26T12:16:01.383Z",
+      "event_count": 2,
+      "raw_event_count": 10,
+      "file_path": "logs/wakunkun/2026-07-26/claude-code__e0bc2875-f5a3-456e-90d4-a1ebe0bfc812.jsonl",
+      "collection_mode": "cli",
+      "health": "ok",
+      "model": "<synthetic>"
+    },
+    {
+      "session_id": "680f7d42-a541-4b59-9905-0feedec1281e",
+      "tool": "claude-code",
+      "started_at": "2026-07-26T12:21:19.984Z",
+      "last_event_at": "2026-07-26T12:49:49.956Z",
+      "event_count": 181,
+      "raw_event_count": 235,
+      "file_path": "logs/wakunkun/2026-07-26/claude-code__680f7d42-a541-4b59-9905-0feedec1281e.jsonl",
       "collection_mode": "cli",
       "health": "ok",
       "model": "mimo-v2.5-pro"
