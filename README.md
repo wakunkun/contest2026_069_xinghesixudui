@@ -49,3 +49,11 @@ AI 硬件产品创新（openvela + ai_agent 端侧多模态 AI 老人关怀系�
 - 赛道：AI 硬件产品创新
 - 上游贡献：open-vela/nuttx PR #345（QMA7981 驱动修复）
 - 许可证：Apache 2.0
+
+## 七、AI Coding 日志覆盖说明
+
+本项目的 AI Coding 日志覆盖完整的开发生命周期：
+- **初始开发阶段**（2026-07-26）：5 个会话，涵盖方案设计、Skill 定义、代码审阅、驱动适配等环节
+- **硬件验证与优化阶段**（2026-08-23）：4 个会话，涵盖 QMA7981 驱动审查、ai_agent 框架与 Skill 审查、编译系统与 defconfig 审查、系统架构与测试数据验证
+
+所有会话使用 Claude Code 工具，模型为小米 mimo-v2.5-pro。日志由官方采集器（contest-log-collector v1.2.0）自动采集，经 validate-log.py 校验全部通过（ALL OK）。完整日志见 `logs/wakunkun/` 目录。
